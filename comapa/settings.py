@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'comapa.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mydb',  # Nombre de la base de datos
+        'USER': 'postgres',  # Usuario de la base de datos
+        'PASSWORD': 'hoX71iOhYR2O',  
+        'HOST': '44.202.52.142',  
+        'PORT': '5432',  # Puerto de PostgreSQL
     }
 }
 
